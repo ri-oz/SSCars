@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the data
-url = 'https://raw.githubusercontent.com/ri-oz/Cars-Analytics/main/CarData.csv'  # Change this to your actual CSV path
+url = 'https://raw.githubusercontent.com/ri-oz/SSCars/main/CarData.csv'  # Change this to your actual CSV path
 data = pd.read_csv(url)
 
 # Normalize column names: strip whitespace and replace spaces with underscores
