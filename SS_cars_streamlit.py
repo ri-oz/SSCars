@@ -3,7 +3,7 @@ import pandas as pd
 
 # Load the data
 url = 'https://raw.githubusercontent.com/ri-oz/SSCars/main/CarData.csv'  # Change this to your actual CSV path
-data = pd.read_csv(url)
+data = pd.read_csv(url, index_col=0)
 
 # Normalize column names: strip whitespace and replace spaces with underscores
 data.columns = data.columns.str.strip().str.replace(' ', '_')
