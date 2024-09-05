@@ -8,9 +8,6 @@ data = pd.read_csv(url)
 # Normalize column names: strip whitespace and replace spaces with underscores
 data.columns = data.columns.str.strip().str.replace(' ', '_')
 
-# Display the column names after normalization for debugging purposes
-st.write("Columns in the dataset:", list(data.columns))
-
 # Expected columns after normalization
 expected_columns = ['model', 'manuf', 'model_details', 'year', 'month', 'motor_type_0', 'motor_type_1', 'transmission', 'color', 'body_type', 'price', 'mileage']
 
